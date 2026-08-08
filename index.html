@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Royal Veg Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="progress-bar"></div>
+
+    <div class="loader">
+        <h1>Royal Veg</h1>
+    </div>
+
+    <header>
+
+        <nav>
+
+            <div class="logo">
+                Royal <span>Veg</span>
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Chef</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+            <div style="display:flex;gap:15px;align-items:center;">
+
+                <button class="dark-toggle" onclick="DarkLightmode()">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <section class="hero">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/5787/5787016.png" class="food food1">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/5787/5787065.png" class="food food2">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" class="food food3">
+
+        <img src="./images/background-image/pizza-sticker.png" class="food food4">
+
+        <div class="hero-content glass" data-aos="zoom-in">
+
+            <h1>
+                Authentic <span>Indian</span>
+                Cuisine
+            </h1>
+
+            <p>
+                Pure Vegetarian Delights with Authentic Indian Taste.
+                Experience luxury dining with traditional Indian flavors,
+                fresh ingredients, and unforgettable hospitality.
+            </p>
+
+            <div class="hero-btns">
+
+                <button class="btn btn-primary">
+                    Book Table
+                </button>
+
+                <button class="btn btn-outline">
+                    View Menu
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+ABOUT SECTION
+========================= -->
+
+    <section class="about section-padding" id="about">
+
+        <div class="section-title" data-aos="fade-up">
+            <h2>About Our Restaurant</h2>
+            <p>Traditional Taste With Modern Luxury</p>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image" data-aos="fade-right">
+                <img src="./images/about-img/about.jpg" alt="">
+            </div>
+
+            <div class="about-content glass" data-aos="fade-right">
+
+                <h3>20+ Years of Culinary Excellence</h3>
+
+                <p>
+                    Royal Veg Restaurant has been serving authentic Indian
+                    vegetarian cuisine with unmatched quality and hospitality.
+                    Our recipes blend traditional Indian flavors with modern
+                    presentation to create unforgettable dining experiences.
+                </p>
+
+                <div class="about-boxes">
+
+                    <div class="mini-box">
+                        <h4>Mission</h4>
+                        <p>Serve fresh and hygienic vegetarian food.</p>
+                    </div>
+
+                    <div class="mini-box">
+                        <h4>Vision</h4>
+                        <p>Become India's most loved family restaurant.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+WHY CHOOSE US
+========================= -->
+
+    <section class="why-us">
+
+        <div class="section-title" data-aos="fade-up">
+            <h2>Why Choose Us</h2>
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card glass" data-aos="zoom-in">
+                <i class="fas fa-leaf"></i>
+                <h3>100% Pure Veg</h3>
+                <p>Guaranteed vegetarian ingredients.</p>
+            </div>
+
+            <div class="why-card glass" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-seedling"></i>
+                <h3>Fresh Ingredients</h3>
+                <p>Farm fresh vegetables every day.</p>
+            </div>
+
+            <div class="why-card glass" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-heart"></i>
+                <h3>Family Friendly</h3>
+                <p>Comfortable dining environment.</p>
+            </div>
+
+            <div class="why-card glass" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-award"></i>
+                <h3>Premium Quality</h3>
+                <p>Luxury dining experience.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+STATISTICS
+========================= --> 
+
+    <section class="stats">
+
+        <div class="stats-container">
+
+            <div class="counter-box">
+                <h2 class="counter" data-target="50000">0</h2>
+                <p>Happy Customers</p>
+            </div>
+
+            <div class="counter-box">
+                <h2 class="counter" data-target="100000">0</h2>
+                <p>Dishes Served</p>
+            </div>
+
+            <div class="counter-box">
+                <h2 class="counter" data-target="20">0</h2>
+                <p>Years Experience</p>
+            </div>
+
+            <div class="counter-box">
+                <h2 class="counter" data-target="15">0</h2>
+                <p>Expert Chefs</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+FOOD CATEGORIES
+========================= -->
+
+    <section class="categories">
+
+        <div class="section-title">
+            <h2>Popular Food Categories</h2>
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card" data-aos="flip-left">
+                <img src="./images/food-catagories/food-catagory-1.jpg">
+                <h3>North Indian</h3>
+            </div>
+
+            <div class="category-card" data-aos="flip-left">
+                <img src="./images/food-catagories/food-catagory-2.jpg">
+                <h3>South Indian</h3>
+            </div>
+
+            <div class="category-card" data-aos="flip-left">
+                <img src="./images/food-catagories/food-catagory-3.jpg">
+                <h3>Chinese</h3>
+            </div>
+
+            <div class="category-card" data-aos="flip-left">
+                <img src="./images/food-catagories/food-catagory-4.jpg">
+                <h3>Street Food</h3>
+            </div>
+
+            <div class="category-card" data-aos="flip-left">
+                <img src="./images/food-catagories/food-catagory-5.jpg">
+                <h3>Sweets</h3>
+            </div>
+
+            <div class="category-card" data-aos="flip-left">
+                <img src="./images/food-catagories/food-catagory-6.jpg">
+                <h3>Beverages</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+
+    <section class="menu-section" id="menu">
+
+        <div class="section-title">
+            <h2>Our Special Menu</h2>
+            <p>Authentic Vegetarian Delights</p>
+        </div>
+
+        <div class="menu-controls">
+
+            <input type="text" id="searchFood" placeholder="Search Food...">
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="north">North Indian</button>
+                <button class="filter-btn" data-filter="south">South Indian</button>
+                <button class="filter-btn" data-filter="fastfood">Fast Food</button>
+
+            </div>
+
+        </div>
+
+        <div class="menu-grid">
+
+            </div>
+
+    </section>
+
+
+    <!-- =========================
+CHEF SECTION
+========================= -->
+
+    <section class="chef-section" id="chef">
+
+        <div class="section-title">
+            <h2>Meet Our Expert Chefs</h2>
+            <p>Masters of Indian Vegetarian Cuisine</p>
+        </div>
+
+        <div class="chef-grid">
+        </div>
+
+    </section>
+
+    <!-- =========================
+CERTIFICATES
+========================= -->
+
+    <section class="certificate-section">
+
+        <div class="section-title">
+            <h2>Certificates & Awards</h2>
+            <p>Recognized For Excellence</p>
+        </div>
+
+        <div class="certificate-grid">
+
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+TESTIMONIALS
+========================= -->
+
+    <section class="testimonial-section">
+
+        <div class="section-title">
+            <h2>Customer Reviews</h2>
+            <p>What Our Guests Say</p>
+        </div>
+
+        <div class="testimonial-slider">
+
+            <div class="testimonial active-slide">
+                <h3>★★★★★</h3>
+                <p>
+                    Amazing food quality and wonderful service.
+                    The best vegetarian restaurant in town.
+                </p>
+                <h4>- Rahul Mehta</h4>
+            </div>
+
+            <div class="testimonial">
+                <h3>★★★★★</h3>
+                <p>
+                    Loved the ambiance and authentic taste.
+                    Highly recommended.
+                </p>
+                <h4>- Sneha Jain</h4>
+            </div>
+
+            <div class="testimonial">
+                <h3>★★★★★</h3>
+                <p>
+                    Perfect family restaurant with hygienic food.
+                </p>
+                <h4>- Mohit Gupta</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+GALLERY SECTION
+========================= -->
+
+    <section class="gallery-section" id="gallery">
+
+        <div class="section-title">
+            <h2>Restaurant Gallery</h2>
+            <p>Our Food & Ambience</p>
+        </div>
+
+        <div class="gallery-grid">
+
+            <img src="./images/Restaurant-Gallery-imgs/gallery-imgs-1.jpg" class="gallery-img">
+            <img src="./images/Restaurant-Gallery-imgs/gallery-imgs-2.jpg" class="gallery-img">
+            <img src="./images/Restaurant-Gallery-imgs/gallery-imgs-3.jpg" class="gallery-img">
+            <img src="./images/Restaurant-Gallery-imgs/gallery-imgs-4.jpg" class="gallery-img">
+            <img src="./images/Restaurant-Gallery-imgs/gallery-imgs-5.jpg" class="gallery-img">
+            <img src="./images/Restaurant-Gallery-imgs/gallery-imgs-6.jpg" class="gallery-img">
+
+        </div>
+
+    </section>
+
+    <!-- LIGHTBOX -->
+
+    <div class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-img">
+    </div>
+
+    <!-- =========================
+RESERVATION
+========================= -->
+
+    <section class="reservation-section" id="reservation">
+
+        <div class="section-title">
+            <h2>Book Your Table</h2>
+        </div>
+
+        <form class="reservation-form">
+
+            <input type="text" placeholder="Your Name" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="date" required>
+            <input type="time" required>
+
+            <select>
+                <option>1 Guest</option>
+                <option>2 Guests</option>
+                <option>4 Guests</option>
+                <option>6 Guests</option>
+                <option>10+ Guests</option>
+            </select>
+
+            <button type="submit">
+                Book Table
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- =========================
+CONTACT
+========================= -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>+91 7014529419</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fab fa-whatsapp"></i>
+                <h3>WhatsApp</h3>
+                <p>+91 7014529419</p>
+            </div>
+
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>info@royalveg.com</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+MAP
+========================= -->
+
+    <section class="map-section">
+
+        <iframe src="https://maps.google.com/maps?q=jaipur&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen
+            loading="lazy">
+        </iframe>
+
+    </section>
+
+    <!-- =========================
+FOOTER
+========================= -->
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+                <h3>Royal Veg</h3>
+                <p>
+                    Pure Vegetarian Delights with Authentic Indian Taste.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservation</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Newsletter</h3>
+
+                <input type="email" placeholder="Your Email">
+
+                <button>
+                    Subscribe
+                </button>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Royal Veg Restaurant
+        </div>
+
+    </footer>
+
+    <!-- BACK TO TOP -->
+
+    <button id="topBtn">
+        ↑
+    </button>
+
+
+    <a href="https://wa.me/7014529419" class="whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="tel:978558915" class="call">
+        <i class="fa-solid fa-phone"></i>
+    </a>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
